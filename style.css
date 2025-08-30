@@ -1,0 +1,16 @@
+body { font-family: sans-serif; padding: 20px; background: #f3e8ff; }
+#sensor-display { margin-bottom: 20px; }
+.switch {
+  width: 60px; height: 30px; margin: 5px;
+  background: #6b46c1; border-radius: 15px; position: relative;
+  display: inline-block; cursor: pointer;
+  transition: background 0.3s ease;
+}
+.switch::after {
+  content: ''; width: 28px; height: 28px; background: #fff; border-radius: 50%;
+  position: absolute; top: 1px; left: 1px; transition: transform 0.3s ease;
+}
+.switch.open { background: #f59e0b; }
+.switch.open::after { transform: translateX(30px); }
+button { padding: 10px 20px; font-size: 16px; background: #8b5cf6; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+button:hover { background: #6b46c1; }
