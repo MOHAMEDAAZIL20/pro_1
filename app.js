@@ -1,3 +1,7 @@
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js')
+    .then(() => console.log('Service Worker registered'));
+}
 // Sensor Simulator
 class SensorSimulator {
   constructor() { this.interval = null; }
